@@ -8,7 +8,37 @@
 7. import to main.jsx by import "./index.scss"
 
 
-*** added 
+* Added 
+
+Create a .gitignore File:
+
+***    In your project root, create a file named .gitignore.
+
+Specify node_modules:
+
+    Open .gitignore and add the following line:
+
+***    node_modules/
+
+    This tells Git to ignore the entire node_modules directory.
+
+Commit .gitignore:
+
+    Commit your .gitignore file to your repository:
+
+***    git add .gitignore && git commit -m “Add .gitignore with node_modules”
+
+Effect on Existing Repositories:
+
+    If node_modules was previously committed, you need to remove it:
+
+***   git rm -r –cached node_modules && git commit -m “Remove node_modules”
+
+
+
 ###:
 created homePage  + scss files for them 
 created components searchBar Navbar with scss files
+
+after alot of stuff before react routing 
+i started to think about git -____- 
